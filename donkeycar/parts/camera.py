@@ -24,7 +24,7 @@ class CSICamera(BaseCamera):
     def __init__(self, resolution=(120, 160), framerate=60):
         import cv2
         # initialize the camera and stream
-        self.camera = cv2.VideoCapture(self.gstreamer_pipeline(display_width=resolution[0],display_height=resolution[1],flip_method=0), cv2.CAP_GSTREAMER)
+        self.camera = cv2.VideoCapture(self.gstreamer_pipeline(display_width=resolution[1],display_height=resolution[0],flip_method=0), cv2.CAP_GSTREAMER)
         self.ret , self.image = self.camera.read()
         # initialize the frame and the variable used to indicate
         # if the thread should be stopped
