@@ -25,6 +25,10 @@ community contributions.
 * Leverage community contributed driving data.
 * Use existing CAD models for design upgrades.
 
+### check the manage_and_config ZIP file.
+The zip files containing the manage.py and config.py files. With the changs it is possible to use a PS4 controller to control the car and to get a seperate folder for each training run.
+
+
 ### Get driving.
 After building a Donkey2 you can turn on your car and go to http://localhost:8887 to drive.
 
